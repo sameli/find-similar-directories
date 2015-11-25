@@ -1,7 +1,14 @@
 #!/bin/bash
 
+#sourceDir=$1
+#sourceBaseName=$(basename "$sourceDir")
 pathToSearch=$1
-pathToSaveFile=$2
+pathToSaveFile=$(pwd $2)
+
+#exit 0
+#files=$(find "$pathToSearch" -type d)
+#list=()
+#listBasename=()
 echo -e "\n------------- path to search: $pathToSearch"
 echo -e "main process:"
 cd "$pathToSearch"
